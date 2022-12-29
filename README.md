@@ -11,4 +11,4 @@ chmod 600 ~/.kaggle/kaggle.json
 
 ## Linters
 
-- Install [black]() `pip install black`
+- Install [black](https://github.com/psf/black) `pip install black`
