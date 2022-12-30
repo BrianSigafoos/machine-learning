@@ -3,7 +3,7 @@
 I'm using this repo to compliment my blog ([briansigafoos.com](https://briansigafoos.com/)) as I explore Machine Learning:
 
 - [fast.ai course](https://course.fast.ai/)
-- [Andrej Karpathy's Neural Networs: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+- [Andrej Karpathy's Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
 ## Setup
 
