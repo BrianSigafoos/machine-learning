@@ -11,4 +11,10 @@ chmod 600 ~/.kaggle/kaggle.json
 
 ## Linters
 
-- Install [black](https://github.com/psf/black) `pip install black`
+- Install [black](https://github.com/psf/black) `pip install black` + `pip install 'black[jupyter]'`
+
+## TODO
+
+- [x] Add black and configure for VSCode
+- [x] Add VSCode tasks to autoformat code
+- [ ] Add Github Action to run linters
