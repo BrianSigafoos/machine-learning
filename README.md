@@ -31,3 +31,4 @@ chmod 600 ~/.kaggle/kaggle.json
 - [x] Add VSCode tasks to autoformat code
 - [x] Add pre-commit hooks
 - [x] Add Github Action to run linters
+- [x] Add isort to auto-sort imports

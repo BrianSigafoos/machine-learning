@@ -1,3 +1,6 @@
 .ipynb_checkpoints/
-.data/
+.kaggle_data/
 tmp/
+
+# Kaggle
+submission.csv
