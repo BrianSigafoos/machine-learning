@@ -19,7 +19,7 @@ chmod 600 ~/.kaggle/kaggle.json
 ### Linters
 
 - Install [black](https://github.com/psf/black) `pip install black` + `pip install 'black[jupyter]'`
-- Install [pre-commit] `pip install pre-commit` and `pre-commit install`
+- Install [pre-commit] `pip install pre-commit` and `pre-commit install; touch .pre-commit-config.yaml`
 
 ## Maintenance
 
