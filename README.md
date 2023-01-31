@@ -7,6 +7,15 @@ I'm using this repo to compliment my blog ([briansigafoos.com](https://briansiga
 
 ## Setup
 
+### Development
+
+```
+mamba install -y \
+  diffusers \
+  transformers \
+  black
+```
+
 ### Kaggle credentials
 
 From kaggle.com > My Account > Create new API token to download credentials in `kaggle.json`.
