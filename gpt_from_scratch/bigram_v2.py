@@ -15,9 +15,9 @@ block_size = 8  # what is the maximum context length for predictions?
 max_iters = 5000
 eval_interval = 500
 learning_rate = 1e-3
-# 3s
+# 8s
 device = "cuda" if torch.cuda.is_available() else "cpu"
-# 17s
+# 43s
 # device = "cuda" if torch.cuda.is_available() else "mps" if torch.has_mps else "cpu"
 eval_iters = 200
 n_embd = 32
