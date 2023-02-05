@@ -7,14 +7,33 @@ I'm using this repo to compliment my blog ([briansigafoos.com](https://briansiga
 
 ## Setup
 
-### Development
+## Development
 
+Install Python using [mamba](https://mamba.readthedocs.io). Anywhere you see instructions for `conda`, you can use `mamba` instead (it's faster). Why not `pip`? If you're doing ML, `mamba`/`conda` makes it easier to have everything you need (including Python), and to optimize packages for your GPU.
+
+```shell
+# First:
+# Install mamba for your machine: https://github.com/conda-forge/miniforge#mambaforge
+# Or use this script: https://github.com/fastai/fastsetup/blob/master/setup-conda.sh
+
+# Packages
+mamba install -y -c fastchan \
+  jupyter \
+  ipywidgets \
+  notebook \
+  numpy \
+  pandas \
+  pytorch \
+  fastai \
+  graphviz \
+  psycopg2 \
+  python-dotenv
 ```
-mamba install -y \
-  diffusers \
-  transformers \
-  black
-```
+
+### Linters
+
+- Install [black](https://github.com/psf/black) `pip install black` + `pip install 'black[jupyter]'`
+- Install [pre-commit] `pip install pre-commit` and `pre-commit install; touch .pre-commit-config.yaml`
 
 ### Kaggle credentials
 
@@ -24,11 +43,6 @@ From kaggle.com > My Account > Create new API token to download credentials in `
 mv ~/Downloads/kaggle.json ~/.kaggle/kaggle.json
 chmod 600 ~/.kaggle/kaggle.json
 ```
-
-### Linters
-
-- Install [black](https://github.com/psf/black) `pip install black` + `pip install 'black[jupyter]'`
-- Install [pre-commit] `pip install pre-commit` and `pre-commit install; touch .pre-commit-config.yaml`
 
 ## Maintenance
 
