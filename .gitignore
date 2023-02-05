@@ -7,3 +7,6 @@ submission.csv
 
 # Images from Stable Diffusion
 .images/
+
+# Data files
+.data/
