@@ -1,7 +1,6 @@
-# Source: https://github.com/karpathy/ng-video-lecture/blob/master/bigram.py
-# this v2 code: https://youtu.be/kCc8FmEb1nY?t=4908
+# Source: https://github.com/karpathy/ng-video-lecture/blob/master/gpt.py
 #
-# Usage: python bigram_v2b.py
+# Usage: python gpt.py
 #
 
 
@@ -15,12 +14,12 @@ block_size = 8  # what is the maximum context length for predictions?
 max_iters = 5000
 eval_interval = 500
 learning_rate = 1e-3
+eval_iters = 200
+n_embd = 32
 # 8s
 device = "cuda" if torch.cuda.is_available() else "cpu"
 # 43s
 # device = "cuda" if torch.cuda.is_available() else "mps" if torch.has_mps else "cpu"
-eval_iters = 200
-n_embd = 32
 # ------------
 
 torch.manual_seed(1337)

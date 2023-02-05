@@ -8,13 +8,13 @@ block_size = 256  # what is the maximum context length for predictions?
 max_iters = 5000
 eval_interval = 500
 learning_rate = 3e-4
-# device = "cuda" if torch.cuda.is_available() else "cpu"
-device = "cuda" if torch.cuda.is_available() else "mps" if torch.has_mps else "cpu"
 eval_iters = 200
 n_embd = 384
 n_head = 6
 n_layer = 6
 dropout = 0.2
+# device = "cuda" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "mps" if torch.has_mps else "cpu"
 # ------------
 
 torch.manual_seed(1337)
@@ -146,6 +146,7 @@ class Block(nn.Module):
         self.ln2 = nn.LayerNorm(n_embd)
 
     def forward(self, x):
+        # Apply the LayerNorm before the residual connection
         x = x + self.sa(self.ln1(x))
         x = x + self.ffwd(self.ln2(x))
         return x
@@ -232,3 +233,5 @@ for iter in range(max_iters):
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
 print(decode(m.generate(context, max_new_tokens=500)[0].tolist()))
 # open('more.txt', 'w').write(decode(m.generate(context, max_new_tokens=10000)[0].tolist()))
+
+# TODO: save the model
