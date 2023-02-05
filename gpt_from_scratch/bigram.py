@@ -48,6 +48,7 @@ n = int(0.9 * len(data))
 train_data = data[:n]
 val_data = data[n:]
 
+
 # data loading
 def get_batch(split):
     # generate a small batch of data of inputs x and targets y
@@ -82,7 +83,6 @@ class BigramLanguageModel(nn.Module):
         self.token_embedding_table = nn.Embedding(vocab_size, vocab_size)
 
     def forward(self, idx, targets=None):
-
         # idx and targets are both (B,T) tensor of integers
         logits = self.token_embedding_table(idx)  # (B,T,C)
 
@@ -119,7 +119,6 @@ m = model.to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 
 for iter in range(max_iters):
-
     # every once in a while evaluate the loss on train and val sets
     if iter % eval_interval == 0:
         losses = estimate_loss()
