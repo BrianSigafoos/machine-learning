@@ -25,7 +25,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 torch.manual_seed(1337)
 
-DATA = ".data/tinyshakespeare.txt"
+DATA = "data/tinyshakespeare.txt"
 
 try:
     with open(DATA, "r", encoding="utf-8") as f:

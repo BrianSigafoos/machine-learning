@@ -2,7 +2,7 @@ from pathlib import Path
 from urllib.request import urlretrieve
 
 TINY_SHAKESPEARE_URL = "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt"
-path_data = Path(".data")
+path_data = Path("data")
 path_data.mkdir(exist_ok=True)
 path_file = path_data / "tinyshakespeare.txt"
 

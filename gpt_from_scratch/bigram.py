@@ -22,7 +22,7 @@ eval_iters = 200
 
 torch.manual_seed(1337)
 
-DATA_FILE = ".data/tinyshakespeare.txt"
+DATA_FILE = "data/tinyshakespeare.txt"
 try:
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         text = f.read()

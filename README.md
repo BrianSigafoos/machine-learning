@@ -40,6 +40,7 @@ mamba install -y -c fastchan \
 From kaggle.com > My Account > Create new API token to download credentials in `kaggle.json`.
 
 ```shell
+mkdir -p ~/.kaggle
 mv ~/Downloads/kaggle.json ~/.kaggle/kaggle.json
 chmod 600 ~/.kaggle/kaggle.json
 ```
